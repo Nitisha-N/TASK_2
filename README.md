@@ -52,7 +52,7 @@ I tried two sizes and asked both the same 3 questions.
 |---|---|---|
 | Where is the search done? | Weak. Only 1 of the 4 chunks had search code. The others were imports and docstrings. | Better. It found the real `index.query(...)` code in vector_store.py and the retrieval part of query_pipeline.py. |
 | How are chunks stored in Pinecone? | Good, but the upsert code was split over 3 chunks. | Good. It found store_in_vector_db and the upsert function. |
-| Where are the API keys loaded? | All 4 chunks in both runs came from config.py, including the load_environment_variables function, which is the code that loads the keys.
+| Where are the API keys loaded? | All 4 chunks in both runs came from config.py, including the load_environment_variables function, which is the code that loads the keys. | Same outcome.|
 
 Both sizes were fine for small, specific questions. But 400 did badly on the bigger
 question, because the code got cut into too many small pieces. With 800, more of each
