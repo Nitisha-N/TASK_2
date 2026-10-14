@@ -128,7 +128,7 @@ list the most relevant files first. After that it answered properly.
 ## What is in this repo
 
 ```
-multi-agent-code-helper/
+TASK_2/
 ├── README.md
 └── code_helper/
     ├── __init__.py
